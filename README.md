@@ -21,3 +21,4 @@
 - [ ] Exibição do detalhe do filme
 - [ ] Opção de Favoritar Filme
 - [ ] Listagem de Filmes Favoritos
+- [ ] Exibição de Pagina não encontrada
