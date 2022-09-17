@@ -13,7 +13,19 @@
 <p align="center">🚀 lib para construir interfaces de usuário com componentes reutilizáveis</p>
 <br />
  
+
+ ### 🛠 Tecnologias
+
+As seguintes ferramentas foram usadas na construção do projeto:
+
+- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://pt-br.reactjs.org/)
+
+<br />
+
+
 ![Details web](./assets/filmflix-screen.png) 
+
 
 ### Features
 
