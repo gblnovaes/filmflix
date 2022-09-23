@@ -1,10 +1,8 @@
 import { useEffect,useState } from 'react'
-import env from "react-dotenv";
-
 import api from '../../services/api'
 import {Link} from 'react-router-dom'
 import './home.css'
-
+ 
  
 function Home(){
     
@@ -17,18 +15,18 @@ function Home(){
         async function loadFilmes(){
             const response = await api.get('movie/now_playing', {
                 params : {
-                    api_key: env.REACT_APP_DEV_MODE,
+                    api_key: process.env.REACT_APP_DEV_MODE,
                     language: 'pt-br',
                     page: 1
                 }
             })
-            console.log(response.data.results.slice(0,10))
+            // console.log(response.data.results.slice(0,10))
             setFilmes(response.data.results.slice(0,10))
         }
 
         loadFilmes()
         setLoading(false)
-    },[])
+    },[filmes])
 
     if(loading){
         return(
