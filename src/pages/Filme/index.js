@@ -6,7 +6,7 @@ import './filme.css'
 
 function Filme(){
     const {id} = useParams()
-    const [filme        ,setFilme] = useState('')
+    const [filme,setFilme] = useState('')
     const [loading,setLoading] = useState(true)
     const navigate = useNavigate()
 
@@ -40,6 +40,29 @@ function Filme(){
         )
     }
     
+    function salvarFilme(){ 
+        const meusFilmes = localStorage.getItem("@filmFlix")
+        
+        let filmesSalvos = JSON.parse(meusFilmes) || []
+        
+        let hasFilme = filmesSalvos.some( (filmesSalvos) => filmesSalvos.id === filme.id )
+        
+        console.log(hasFilme)
+        
+        if(hasFilme){
+            // console.log("Filme Ja existe.")
+            return
+        }
+        
+        filmesSalvos.push(filme)
+        
+        localStorage.setItem("@filmFlix",JSON.stringify(filmesSalvos))
+        
+        alert("Salvo com sucesso.")
+        
+        
+    }
+    
     
     return(
          
@@ -51,8 +74,8 @@ function Filme(){
                 <strong>Avaliação</strong>
                 <span>{filme.vote_average} / 10</span>
                 <div className='area-buttons'>
-                    <button>Salvar</button>
-                    <button><a href="/" >Trailer</a></button>
+                    <button onClick={ salvarFilme }>Salvar</button>
+                    <button><a target="blank" rel="external noreferrer" href={`https://youtube.com/results?search_query=${filme.title}`} >Trailer</a></button>
                 </div>
             </div>
          
