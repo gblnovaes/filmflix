@@ -51,6 +51,7 @@ function Filme(){
         
         if(hasFilme){
             // console.log("Filme Ja existe.")
+            toast.warn("Filme ja está em sua lista.")
             return
         }
         
