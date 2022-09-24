@@ -36,3 +36,8 @@
     text-decoration: none;
     color: #116feb;
 }
+
+.meus-filmes .filme-not-found {
+    color: #116feb;
+    height: calc(50vh - 30px);
+}
