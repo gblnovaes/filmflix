@@ -30,7 +30,8 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Features
 
 - [x] Listagem na Home
-- [ ] Exibição do detalhe do filme
-- [ ] Opção de Favoritar Filme
-- [ ] Listagem de Filmes Favoritos
+- [x] Exibição do detalhe do filme
+- [x] Opção de Favoritar Filme
+- [x] Listagem de Filmes Favoritos
+- [ ] Excluir de Filmes Favoritos
 - [x] Exibição de Pagina não encontrada
