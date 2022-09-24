@@ -7,9 +7,9 @@ import Favoritos from './pages/Favoritos'
 
 function RoutesApp() {
     return(
-        
-        <BrowserRouter>
+    <BrowserRouter>
         <Header/>
+       
         <Routes>
             <Route path='/' element={ <Home /> } />
             <Route path='/filme/:id' element={<Filme />} />
