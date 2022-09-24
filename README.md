@@ -23,9 +23,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <br />
 
-
 ![Details web](./assets/filmflix-screen.png) 
-
 
 ### Features
 
